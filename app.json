@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "WiFi Watch",
+    "slug": "wifi-watch-realtime",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#050508",
+      "resizeMode": "contain",
+      "image": "./assets/chibi-bg.jpg"
+    },
+    "android": {
+      "package": "com.ryanaque.wifiwatch",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#050508"
+      },
+      "permissions": [
+        "ACCESS_WIFI_STATE",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "allowFontScaling": false
+    },
+    "plugins": [],
+    "extra": {
+      "eas": {
+        "projectId": "wifi-watch-ryan-aque"
+      }
+    }
+  }
+}

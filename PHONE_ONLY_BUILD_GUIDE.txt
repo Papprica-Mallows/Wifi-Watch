@@ -1,0 +1,51 @@
+
+# PAANO MAG-BUILD NG APK GAMIT PHONE LANG - WALANG PC!
+
+## Method 1: EAS Build sa phone browser (Pinakamadali)
+
+1. Pumunta sa https://expo.dev - gumawa ng free account
+
+2. Pumunta sa https://github.com - gumawa ng free account
+
+3. Sa GitHub app o browser sa phone:
+   - Create new repository: "wifi-watch"
+   - Upload lahat ng files ng project (App.js, package.json, app.json, assets folder)
+
+4. Sa GitHub repo mo, punta sa Settings > Secrets > Actions
+   - New secret: EXPO_TOKEN
+   - Paano makuha EXPO_TOKEN?
+     * Pumunta sa expo.dev > Account Settings > Access Tokens > Create new token
+     * Copy mo token, paste sa GitHub secret
+
+5. Sa GitHub repo, punta sa Actions tab
+   - Makikita mo "Build WiFi Watch APK"
+   - Click "Run workflow" > Run
+
+6. Wait 15-20 mins, pag tapos may lalabas na "Artifacts" - download mo APK!
+
+## Method 2: Expo Go + EAS (Kung may friend na may PC pero ikaw phone lang)
+
+1. Install Expo Go sa phone mo from Play Store
+
+2. Sa phone browser, punta sa https://expo.dev
+
+3. Create new project > Import from GitHub yung repo mo
+
+4. Click "Build" > Android APK > Preview
+
+5. Wait lang, tapos may link na download!
+
+## Bakit hindi pwede ApkCreator?
+- WebView lang yun
+- Walang native TCP socket
+- Walang WiFi permissions
+- Kaya nag-e-error as webpage
+
+## Tunay na APK = EAS Build lang!
+
+Pag na-download mo APK, install mo:
+- Settings > Allow install from unknown sources > ON
+- Open APK file > Install
+- Open app - automatic na mag-scan ng WiFi mo!
+
+All credits to Mr. Ryan Aque!

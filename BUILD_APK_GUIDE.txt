@@ -1,0 +1,25 @@
+
+# WiFi Watch - APK Build Instructions (Mr. Ryan Aque)
+
+## FINAL APP - Realtime, Fixed Android Size, No Pinch, Credits Splash
+
+### How to build APK - 2 Options:
+
+OPTION 1 - EAS Build (Easiest, no Android Studio needed):
+1. npm install -g eas-cli
+2. eas login
+3. eas build -p android --profile preview
+4. Wait 10-15 mins, download APK link
+
+OPTION 2 - Local with Expo Go (Test now):
+1. npm install
+2. npx expo start
+3. Scan QR with Expo Go app
+
+### Features:
+- Splash: All credits to Mr. Ryan Aque (2.5s)
+- Realtime auto-scan every 15s
+- Reads your actual WiFi IP (192.168.x.x)
+- Scans 1-254 via real TCP sockets
+- Fixed Android size, StatusBar hidden, no pinch/zoom
+- Portrait locked
